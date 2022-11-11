@@ -1,0 +1,382 @@
+@font-face{ 
+    font-family: Inter;
+    src: url("Inter-Light.ttf") format('truetype');
+   
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+#travel{
+    position: absolute;
+    background:url('assets/fundo.png') no-repeat top left;
+    max-width: 1920px;
+    max-height: 1200px;
+    width: 1920px;
+    height: 1080px;
+}
+
+#marca{
+/*    position: relative;
+    left: 5%;  
+    top:5%;
+    width: 653.95px;
+    height: 652px;   */
+    /*border:1px solid white;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    /*gap: 64px;*/
+    position: absolute;
+    width: 653.95px;
+    height: 652px;
+    left: 180px;
+    top: 214px;
+    
+}
+#logo{
+    background:url('assets/logotravel.png') no-repeat top left;
+    width: 653.95px;
+    height: 402px;
+}
+#nomeprojeto{
+    position: relative;
+    text-align: center;
+    width: 585px;
+    height: 186px;
+    line-height: 64px;
+    letter-spacing: 50%;
+    margin-left: 34.47px;
+    margin-right: 34.47px;
+    font-family: Inter-Light;
+}
+#nomeprojeto h1{
+    text-align: center;
+    font-size: 56px;
+    color:#FFFFFF;
+    width: 585px;
+    height: 64px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 64px;
+    /* identical to box height, or 114% */
+
+    letter-spacing: 0.5em;
+
+    color: #FFFFFF;
+
+    /*border: 1px solid #000000;*/
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+#nomeprojeto h2{
+    text-align: center;
+    font-size: 32.21px;
+    color:#FFFFFF;
+
+    width: 585px;
+    height: 74px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32.2124px;
+    line-height: 37px;
+    /* or 114% */
+
+    
+    letter-spacing: 0.4em;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+#cadastro{
+    /*border: 1px solid white;*/
+    position: absolute;
+    width: 768px;
+    height: 757px;
+    left: 972px;
+    top: 161px;
+}
+#caixalogin{
+    /*position: relative;*/
+    /*border: 1px solid white;*/
+    width: 768px;
+    height: 632px;
+    margin-left: 0px;
+    margin-top: 125px;
+
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 4px 4px 4px rgba(134, 125, 125, 0.1), inset 0px 0px 2px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 48px;
+   
+}
+#robo{
+    position: absolute;
+    left: 390px;
+    right: 10.47%;
+    top: 0px;
+    bottom: 50.9%;
+    z-index: 1;
+   
+    background:url('assets/robo.png') no-repeat top left;
+}
+#titulocadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 17.07px;
+
+    position: absolute;
+    width: 327.26px;
+    height: 90.07px;
+    left: 102px;
+    top: 190px;
+    z-index: 1;
+}
+#titulocadastro h1{
+    width: 327px;
+    height: 49px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39.0137px;
+    line-height: 49px;
+    /* identical to box height, or 125% */
+
+    text-align: left;
+
+    color: #FFCD05;
+
+}
+#titulocadastro h2{
+    width: 327px;
+    height: 24px;
+    margin-top: -20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.5068px;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: left;
+    color: #FFFFFF;
+
+  
+}
+#destaque{
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.5068px;
+    line-height: 24px;
+    /* identical to box height */
+    margin-left: 20px;
+    text-align: left;
+
+    color: #0EDEFB;
+
+
+    /* Inside auto layout */
+
+  
+}
+#inputs{
+    position: absolute;
+    left: 100px;
+    right: 10px;
+    top: 220px;
+    /*bottom: 50.9%;*/
+    z-index: 1;
+    width: 700px;
+   
+}
+
+.nome{
+   
+    
+    padding: 12px 16px;
+    gap: 8px;
+
+    width: 250px;
+    height: 20px;
+    margin-top: 25px;
+    /* Neutras/Fundo */
+
+    background: #211D28;
+    border: 2px solid #474053;
+    border-radius: 0px;
+   
+    color:#FFFFFF;
+}
+.sobrenome{
+   
+    padding: 12px 16px;
+    gap: 8px;
+    width: 250px;
+    height: 20px;
+    /* Neutras/Fundo */
+    background: #211D28;
+    border: 2px solid #474053;
+    border-radius: 0px;
+    color:#FFFFFF;
+    margin-left: 16px;
+    
+}
+.email{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    width: 556px;
+    height: 20px;
+    margin-top: 25px;
+    /* Neutras/Fundo */
+
+    background: #211D28;
+    border: 2px solid #474053;
+    border-radius: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color:#FFFFFF;
+    
+}
+.senha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+
+    width: 556px;
+    height: 20px;
+    margin-top: 25px;
+    /* Neutras/Fundo */
+
+    background: #211D28;
+    border: 2px solid #474053;
+    border-radius: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color:#FFFFFF;
+}
+input{
+/*    font-family: inter;
+    font-weight: bold;
+    font-size: 18px;*/
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    
+}
+#inputs input:focus{
+    border:2px solid #9b19b4;
+    outline: none !important;
+}
+#botao{
+    position: absolute;
+    width: 566px;
+    top:500px;
+    left: 100px;
+    text-align: center;
+}
+button{
+    
+    text-align: center;
+    padding: 12px 8px;
+    gap: 10px;
+
+    
+    width: 262px;
+    height: 44px;
+   
+    top: 100px;
+
+    background: linear-gradient(135deg, #41C4E1 0%, rgba(157, 25, 179, 0.32) 100%);
+    border-radius: 8px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    border:transparent;
+    
+}
+
+/*Css Pagina Sucesso*/
+#travel-sucess{
+    position: absolute;
+    background:url('assets/fundo.png') no-repeat top left;
+    max-width: 1920px;
+    max-height: 1200px;
+    width: 1920px;
+    height: 1080px;
+}
+#centro{ 
+    text-align: center;
+    margin: auto;
+    width: 857px;
+    height: 800px;
+    
+}
+#mensagem{
+    z-index: 1;
+    width: 857px;
+    height: 212px;
+}
+#mensagem h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 92.737px;
+    line-height: 106px;
+    top: 100px;
+    /* or 114% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+#globo{
+    text-align: center;
+    margin: auto;
+    background:url('assets/globo.png') no-repeat top left;
+    width: 347px;
+    height: 353px;
+}
+#botao-sucesso{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 40px;
+   
+}
