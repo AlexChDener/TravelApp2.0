@@ -1,0 +1,64 @@
+@font-face{ 
+    font-family: Inter;
+    src: url("../../Inter-Light.ttf") format('truetype');
+   
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+#travel-sucess{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('../../assets/fundo.png') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+#centro{ 
+    text-align: center;
+    margin: auto;
+    width: 857px;
+    height: 800px;
+    
+}
+#mensagem{
+    z-index: 1;
+    width: 857px;
+    height: 212px;
+}
+#mensagem h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 92.737px;
+    line-height: 106px;
+    top: 100px;
+    /* or 114% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+#globo{
+    text-align: center;
+    margin: auto;
+    background:url('../../assets/globo.png') no-repeat top left;
+    width: 347px;
+    height: 353px;
+}
+#botao-sucesso{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 40px;
+   
+}

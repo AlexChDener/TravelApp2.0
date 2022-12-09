@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- Alex -->
+<html lang="pt-br">
+
+<head>
+    <title>Travel App</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="poslogin.component.css" media="all">
+</head>
+
+<body>
+    <div id="fundo">
+        <h1 style="color: white" *ngIf="user$ | async as user">Welcome to our app, {{user.email}}!</h1>
+        <ng-container *ngIf="authService.currentUser$ | async as user">
+            <button (click)="logout()">
+                Logout
+            </button>
+        </ng-container>
+    </div>
+</body>
+
+</html>

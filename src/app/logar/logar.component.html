@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Alex -->
+<html lang="pt-br">
+
+<head>
+    <title>Travel App</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="logar.component.css" media="all">
+</head>
+
+<body>
+    <div id="fundo"></div>
+    <div id="google"></div>
+    <div id="apple"></div>
+    <label>O jeito fácil e divertido de viajar!</label>
+    <div id="retangulo">
+        <div id="logo"></div>
+        <form [formGroup]="loginForm" (ngSubmit)="submit()">
+            <tr>
+                <input formControlName="email" placeholder="E-mail" />
+            </tr>
+            <tr>
+                <input type="password" class="senha" formControlName="password" placeholder="Senha" />
+            </tr>
+            <tr>
+                <label class="recupere">Recuperar minha senha</label>
+            </tr>
+            <tr>
+                <button type="submit">Entrar</button>
+            </tr>
+            <tr>
+                <button class="cadastrese" type="button" routerLink="">Cadastre-se</button>
+            </tr>
+        </form>
+    </div>
+</body>
+
+<router-outlet></router-outlet>
+
+</html>

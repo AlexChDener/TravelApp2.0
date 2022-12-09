@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Alex -->
+<html lang="pt-br">
+
+<head>
+    <title>Travel App</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="login.component.css" media="all">
+</head>
+
+<body>
+    <div id="fundo"></div>
+    <div id="retangulo">
+        <div id="travelapp">
+            <h1>TRAVELAPP</h1>
+        </div>
+        <div id="carro"></div>
+        <div id="inputs" style="top: 250px; left: 124px">
+            <form [formGroup]="loginForm" (ngSubmit)="submit()">
+                <tr>
+                    <input class="login" formControlName="email" placeholder="E-mail" />
+                </tr>
+                <tr>
+                    <input type="password" class="login" formControlName="password" placeholder="Senha" />
+                </tr>
+
+
+                <div class="tipografia" style="top: 10px; left: 0px">Recupere minha senha</div>
+                <tr>
+                    <button class="botao" type="submit" style="top: 50px; left: 10px">Entrar</button>
+                </tr>
+                <tr>
+                    <button class="botao2" type="button" style="top: 70px; left: 10px"
+                        routerLink="">Cadastre-se</button>
+                </tr>
+            </form>
+        </div>
+    </div>
+</body>
+
+<router-outlet></router-outlet>
+
+</html>

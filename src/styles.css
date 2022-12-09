@@ -3,41 +3,100 @@
     src: url("Inter-Light.ttf") format('truetype');
    
 }
-body{
+
+/* inicio */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    align-items: center;
+    overflow: auto;
     width: 100%;
     height: 100%;
-    background: black;
+    background-color: black;
 }
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* fim do reset */
+
 #travel{
-    position: absolute;
-    background:url('assets/fundo.png') no-repeat top left;
-    max-width: 1920px;
-    max-height: 1200px;
-    width: 1920px;
-    height: 1080px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('assets/fundo.png') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
 }
 
 #marca{
-/*    position: relative;
-    left: 5%;  
-    top:5%;
-    width: 653.95px;
-    height: 652px;   */
-    /*border:1px solid white;*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    /*gap: 64px;*/
-    position: absolute;
-    width: 653.95px;
-    height: 652px;
-    left: 180px;
-    top: 214px;
-    
-}
+    /*  position: relative;
+        left: 5%;  
+        top:5%;
+        width: 653.95px;
+        height: 652px;   */
+        /*border:1px solid white;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        /*gap: 64px;*/
+        position: absolute;
+        width: 653.95px;
+        height: 652px;
+        left: 180px;
+        top: 214px;
+    }
+
 #logo{
-    background:url('assets/logotravel.png') no-repeat top left;
+    background:url('assets/logotravel.png');
     width: 653.95px;
     height: 402px;
 }
@@ -138,7 +197,7 @@ body{
     bottom: 50.9%;
     z-index: 1;
    
-    background:url('assets/robo.png') no-repeat top left;
+    background:url('assets/robo.png');
 }
 #titulocadastro{
     display: flex;
@@ -297,6 +356,7 @@ input{
     line-height: 24px;
     
 }
+
 #inputs input:focus{
     border:2px solid #9b19b4;
     outline: none !important;
@@ -332,51 +392,8 @@ button{
     
 }
 
-/*Css Pagina Sucesso*/
-#travel-sucess{
+button.facalogin {
     position: absolute;
-    background:url('assets/fundo.png') no-repeat top left;
-    max-width: 1920px;
-    max-height: 1200px;
-    width: 1920px;
-    height: 1080px;
-}
-#centro{ 
-    text-align: center;
-    margin: auto;
-    width: 857px;
-    height: 800px;
-    
-}
-#mensagem{
-    z-index: 1;
-    width: 857px;
-    height: 212px;
-}
-#mensagem h1{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 92.737px;
-    line-height: 106px;
-    top: 100px;
-    /* or 114% */
-
-    text-align: center;
-
-    color: #FFFFFF;
-}
-#globo{
-    text-align: center;
-    margin: auto;
-    background:url('assets/globo.png') no-repeat top left;
-    width: 347px;
-    height: 353px;
-}
-#botao-sucesso{
-    text-align: center;
-    margin: auto;
-    width: 100%;
-    margin-top: 40px;
-   
+    top: 35px;
+    background: none;
 }

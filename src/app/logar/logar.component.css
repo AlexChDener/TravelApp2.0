@@ -1,0 +1,227 @@
+@font-face{ 
+    font-family: Inter;
+    src: url("../../Inter-Light.ttf") format('truetype');
+   
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+#fundo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('../../assets/fundologar.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+#google {
+    
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10.5121px 21.0243px;
+    gap: 7.01px;
+
+    position: absolute;
+    width: 262.68px;
+    height: 72.71px;
+    left: 184.59px;
+    top: 710px;
+
+    background: url('../../assets/playstore.png') no-repeat;
+    border-radius: 10.5121px;
+}
+
+#apple {
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10.5121px 21.0243px;
+    gap: 7.01px;
+
+    position: absolute;
+    width: 262.68px;
+    height: 72.71px;
+    left: 470.59px;
+    top: 710px;
+
+    background: url('../../assets/apple.png') no-repeat;
+    border-radius: 9.97955px;
+}
+
+label {
+    position: absolute;
+    width: 656px;
+    height: 420px;
+    left: 180px;
+    top: 226px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 140px;
+    /* or 117% */
+
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+#retangulo {
+    position: absolute;
+    width: 529px;
+    height: 609px;
+    left: 1211px;
+    top: 235px;
+
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 4px 4px 4px rgba(134, 125, 125, 0.1), inset 0px 0px 2px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 48px;
+}
+
+#logo {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    width: 232.94px;
+    height: 169.19px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background: url('../../assets/logo.png') no-repeat;
+}
+
+input {
+    position: absolute;
+    top: 45%;
+    left: 16%;
+    /* Logins */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    color: white;
+
+    width: 326px;
+    height: 28px;
+
+    /* Neutras/Fundo */
+
+    background: #211D28;
+    border: 2px solid #474053;
+    border-radius: 0px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+input.senha {
+    top: 54%;
+}
+
+label.recupere {
+    top: 70%;
+    left: 16.4%;
+    width: 134px;
+    height: 16px;
+
+    /* Caption */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+button {
+    position: absolute;
+    top: 77%;
+    left: 26%;
+    /* Botões */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 8px;
+    gap: 10px;
+
+    width: 262px;
+    height: 44px;
+
+    /* Botão Principal */
+
+    background: linear-gradient(135deg, #41C4E1 0%, rgba(157, 25, 179, 0.32) 100%);
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+button.cadastrese {
+    top: 87%;
+}

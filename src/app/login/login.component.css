@@ -1,0 +1,185 @@
+@font-face{ 
+    font-family: Inter;
+    src: url("../../Inter-Light.ttf") format('truetype');
+   
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+#fundo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('../../assets/Login.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+#retangulo {
+    /* Rectangle 350 */
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 529px;
+    height: 609px;
+    left: 696px;
+    top: 235px;
+
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 4px 4px 4px rgba(134, 125, 125, 0.1), inset 0px 0px 2px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 48px;
+}
+
+#travelapp {
+    width: 212px;
+    height: 26px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 22.0079px;
+    line-height: 25px;
+    /* identical to box height, or 114% */
+
+    letter-spacing: 0.5em;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    position: relative;
+    left: 159.5px;
+    top: 200px;
+}
+
+#carro {
+    /* Group 65 */
+    position: relative;
+    background: url('../../assets/logotravel.png') no-repeat;
+    background-size: contain;
+    width: 232.94px;
+    height: 119.19px;
+    left: 168px;
+    top: 40px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+
+}
+
+.login {
+    padding: 12px 16px;
+    gap: 8px;
+
+    width: 250px;
+    height: 20px;
+    margin-top: 25px;
+    /* Neutras/Fundo */
+
+    background: #211D28;
+    border: 2px solid #474053;
+    border-radius: 0px;
+   
+    color:#FFFFFF;
+}
+
+.tipografia {
+    /* Recuperar minha senha */
+
+    position: relative;
+    width: 134px;
+    height: 16px;
+
+    /* Caption */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botao {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 8px;
+    gap: 10px;
+
+    width: 262px;
+    height: 44px;
+
+    background: linear-gradient(135deg, #41C4E1 0%, rgba(157, 25, 179, 0.32) 100%);
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.botao2{
+    /* Botões */
+    position: relative;
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 8px;
+    gap: 10px;
+
+    width: 262px;
+    height: 44px;
+
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
